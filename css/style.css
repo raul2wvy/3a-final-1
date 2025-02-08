@@ -5,7 +5,10 @@
 
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
-
+.about_img {
+     background-image: none; /* Removes the background image */
+  }
+  
 
 
 .header-contact {
@@ -854,12 +857,20 @@ ul.btn li:last-child {
 /** footer **/
 
 
-footer .container {
-     padding-bottom: 0;
- }
+.footer {
+     width: 100%;
+     background-image: linear-gradient(to bottom, blue,red);
+     padding: 20px 0;
+  }
+  
+  footer .row {
+     margin-left: 0;
+     margin-right: 0;
+  }
+  
 
 .footer {
-     background: #141629;
+     background-image: linear-gradient(to bottom,red,blue);
      padding-top: 10px;
      text-align: center;
      padding-bottom: 0
@@ -1070,13 +1081,13 @@ ul.social_icon li a:hover {
      font-family: "Dancing Script", serif;
      font-optical-sizing: auto;
      font-weight: bold; /* Use 'bold' directly for font-weight */
-     font-size: 28px; /* Increase text size here, adjust the value as needed */
+     font-size: 4rem; /* Increase text size here, adjust the value as needed */
      text-align: center; /* Ensure the text stays centered */
   }
   
 
      .business-name h1 {
-     font-size: 2rem; /* Adjust size as needed */
+     font-size: 30px; /* Adjust size as needed */
      font-weight: bold;
      margin: 0;
  }
