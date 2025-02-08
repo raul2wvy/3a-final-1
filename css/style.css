@@ -1018,7 +1018,18 @@ ul.social_icon li a:hover {
      color: #000;
      font-size: 18px;
 }
-    /* General Styling */
+
+.container {
+  overflow: auto;  /* Adds scroll if needed */
+  max-width: 100%; /* Prevents content from exceeding the screen width */
+}
+.container {
+     overflow: auto;  /* Adds scroll if needed */
+     max-width: 100%; /* Prevents content from exceeding the screen width */
+   }
+
+   
+/* General Styling */
 .business-name {
      text-align: center;
      font-family: "Dancing Script", serif; /* Re-added the Dancing Script font */
@@ -1028,7 +1039,8 @@ ul.social_icon li a:hover {
      flex-direction: column;
      align-items: center;
      margin-top: 10px;
-     padding-left: px; /* Adjust this for centering */
+     padding-left: 20px; /* Adjust this for centering */
+     box-sizing: border-box; /* Ensure padding doesn't cause overflow */
   }
   
   .business-name h1 {
@@ -1042,4 +1054,82 @@ ul.social_icon li a:hover {
      color: black; /* Adjust color as needed */
      margin: 0;
   }
+  
+.big_text{
+     {
+          flex-wrap: wrap;  /* Forces elements to stay within the screen */
+        }
+}
+
+  /* Media Queries for Responsiveness */
+  
+  /* For screens 1200px and below */
+  @media (max-width: 1200px) {
+     .business-name h1 {
+         font-size: 50px;  /* Resize for medium-sized screens */
+     }
+     .business-name h3 {
+         font-size: 16px; /* Adjust smaller font for h3 */
+     }
+  }
+  
+  /* For tablets (768px and below) */
+  @media (max-width: 768px) {
+     .business-name h1 {
+         font-size: 40px;  /* Resize for tablets */
+     }
+     .business-name h3 {
+         font-size: 14px;  /* Adjust font size for h3 */
+     }
+     .business-name {
+         padding-left: 0; /* Remove padding for smaller screens */
+     }
+  }
+  
+  /* For mobile devices (480px and below) */
+  @media (max-width: 480px) {
+     .business-name h1 {
+         font-size: 30px;  /* Resize font for mobile screens */
+     }
+     .business-name h3 {
+         font-size: 12px;  /* Adjust font size for h3 on mobile */
+     }
+     .business-name {
+         padding-left: 0; /* Remove extra padding for mobile screens */
+         width: 100%; /* Make sure the container takes up full width */
+         box-sizing: border-box; /* Prevent overflow due to padding */
+     }
+  }
+  
+
+  .text-bg {
+     max-width: 100%;  /* Ensures the container does not overflow */
+     overflow: hidden;  /* Hides any potential overflow */
+     word-wrap: break-word;  
+     overflow-wrap: break-word;  
+     white-space: normal;  /* Allows text to wrap */
+  }
+  
+  .text-bg ul {
+     font-size: 2.5rem;  
+     list-style-position: inside;  
+     padding-left: 0;  
+     color: black;  
+     display: flex;
+     flex-direction: column; /* Ensures items stack properly */
+     flex-wrap: wrap;
+     max-width: 100%;
+  }
+  
+  .text-bg h2 {
+     font-size: 2.5rem;
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     white-space: normal;
+  }
+  
+  .container-fluid {
+     max-width: 100%;  
+     padding: 0 15px; /* Adds some spacing to prevent content from touching edges */
+     overflow-x: 
   
