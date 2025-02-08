@@ -1132,4 +1132,277 @@ ul.social_icon li a:hover {
      max-width: 100%;  
      padding: 0 15px; /* Adds some spacing to prevent content from touching edges */
      overflow-x: 
+  /* Three Box Section Styling */
+.three_box {
+     padding: 50px 0; /* Adds space above and below section */
+     background-color: #f8f8f8; /* Light background for contrast */
+  }
   
+  .three_box .container {
+     max-width: 1200px; /* Ensures content doesn't stretch too wide */
+     margin: 0 auto; /* Centers the section */
+  }
+  
+  .three_box .row {
+     display: flex;
+     flex-wrap: wrap; /* Prevents overlap by ensuring wrapping */
+     justify-content: space-between; /* Ensures even spacing */
+     align-items: stretch; /* Ensures all boxes are equal height */
+     gap: 20px; /* Adds space between boxes */
+  }
+  
+  .col-md-4 {
+     flex: 1 1 calc(33.333% - 20px); /* Ensures three equal columns with spacing */
+     max-width: calc(33.333% - 20px);
+  }
+  
+  /* Box Styling */
+  .box_text {
+     background: white;
+     padding: 20px;
+     text-align: center;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+     border-radius: 10px; /* Rounded corners */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100%; /* Ensures equal height for all boxes */
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     white-space: normal;
+  }
+  
+  /* Headings */
+  .box_text h3 {
+     font-size: 1.8rem;
+     margin-bottom: 15px;
+     color: #333;
+  }
+  
+  /* Paragraphs */
+  .box_text p {
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #555;
+     max-width: 100%;
+  }
+  
+  /* Responsive Design: Stack boxes on smaller screens */
+  @media (max-width: 992px) {
+     .col-md-4 {
+        flex: 1 1 calc(50% - 20px); /* Two boxes per row on tablets */
+        max-width: calc(50% - 20px);
+     }
+  }
+  
+  @media (max-width: 768px) {
+     .col-md-4 {
+        flex: 1 1 100%; /* Makes boxes full width on small screens */
+        max-width: 100%;
+        margin-bottom: 20px; /* Adds spacing between stacked boxes */
+     }
+  }
+  
+
+  /* Three Box Section Styling */
+.three_box {
+     padding: 50px 0; /* Adds space above and below section */
+     background-color: #f8f8f8; /* Light background for contrast */
+  }
+  
+  .three_box .container {
+     max-width: 1200px; /* Ensures content doesn't stretch too wide */
+     margin: 0 auto; /* Centers the section */
+  }
+  
+  .three_box .row {
+     display: flex;
+     flex-wrap: wrap; /* Prevents overlap by ensuring wrapping */
+     justify-content: space-between; /* Ensures even spacing */
+     align-items: stretch; /* Ensures all boxes are equal height */
+     gap: 20px; /* Adds space between boxes */
+  }
+  
+  .col-md-4 {
+     flex: 1 1 100%; /* Default to full width */
+  }
+  
+  /* Box Styling */
+  .box_text {
+     background: white;
+     padding: 20px;
+     text-align: center;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+     border-radius: 10px; /* Rounded corners */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     min-height: 100%; /* Ensures equal height for all boxes */
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+     white-space: normal;
+  }
+  
+  /* Headings */
+  .box_text h3 {
+     font-size: 1.8rem;
+     margin-bottom: 15px;
+     color: #333;
+  }
+  
+  /* Paragraphs */
+  .box_text p {
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #555;
+     max-width: 100%;
+  }
+  
+  /* Responsive Design */
+  
+  /* Desktop: 3 boxes in a row */
+  @media (min-width: 992px) {
+     .col-md-4 {
+        flex: 1 1 calc(33.333% - 20px);
+     }
+  }
+  
+  /* Tablets: 2 boxes per row */
+  @media (max-width: 991px) {
+     .col-md-4 {
+        flex: 1 1 calc(50% - 20px);
+     }
+  }
+  
+  /* Mobile: 1 box per row */
+  @media (max-width: 768px) {
+     .col-md-4 {
+        flex: 1 1 100%;
+     }
+  }
+  
+
+  /* General Styles */
+body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ /* Header */
+ .header-main {
+     background-color: #333;
+     padding: 15px 0;
+     text-align: center;
+ }
+ 
+ .header-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1200px;
+     margin: auto;
+ }
+ 
+ .business-name h1 {
+     font-size: 2.5rem;
+     margin: 0;
+ }
+ 
+ .header-contact p {
+     font-size: 1.2rem;
+ }
+ 
+ /* Banner Section */
+ .banner_main {
+     text-align: center;
+     padding: 50px 20px;
+ }
+ 
+ .text-bg h2 {
+     font-size: 2.5rem;
+     font-weight: bold;
+     margin-bottom: 15px;
+ }
+ 
+ .text-bg ul {
+     list-style-type: none;
+     padding: 0;
+ }
+ 
+ .text_img img {
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ /* Three Box Section */
+ .three_box {
+     padding: 50px 0;
+ }
+ 
+ .box_text {
+     background-color: #f8f8f8;
+     padding: 20px;
+     text-align: center;
+     border-radius: 8px;
+     height: 100%;  /* Ensures equal height */
+ }
+ 
+ .box_text h3 {
+     font-size: 1.8rem;
+     margin-bottom: 10px;
+ }
+ 
+ .box_text p {
+     font-size: 1.1rem;
+     color: #555;
+ }
+ 
+ /* About Section */
+ .about {
+     padding: 50px 20px;
+     background-color: #eee;
+ }
+ 
+ .about_box {
+     text-align: center;
+     padding: 20px;
+ }
+ 
+ /* Footer */
+ .footer {
+     background-color: #222;
+     color: white;
+     padding: 30px 0;
+     text-align: center;
+ }
+ 
+ .footer h2 {
+     font-size: 1.8rem;
+ }
+ 
+ .copyright p {
+     font-size: 1rem;
+     margin-top: 10px;
+ }
+ 
+ /* Responsive Fixes */
+ @media (max-width: 768px) {
+     .header-container {
+         flex-direction: column;
+         text-align: center;
+     }
+     
+     .header-contact p {
+         font-size: 1rem;
+     }
+ 
+     .text-bg h2 {
+         font-size: 2rem;
+     }
+ 
+     .box_text {
+         margin-bottom: 20px;
+     }
+ }
+ 
