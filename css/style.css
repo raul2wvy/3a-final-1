@@ -1017,191 +1017,29 @@ ul.social_icon li a:hover {
      background: #fff;
      color: #000;
      font-size: 18px;
-     font-weight: 600;
-     float: left;
 }
-
-.sub_btn {
-     font-size: 17px;
-     transition: ease-in all 0.5s;
-     background-color: #00ff00;
-     color: #fff;
-     padding: 11px 0px;
-     max-width: 200px;
-     width: 100%;
-     display: block;
-     font-weight: 500;
-     text-transform: uppercase;
-     margin-left: -2px;
-}
-
-.sub_btn:hover {
-     background-color: #000;
-     transition: ease-in all 0.5s;
-     color: #fff;
-}
-
-.copyright {
-     margin-top: 70px;
-     padding: 20px 0px;
-}
-
-.copyright p {
-     color: #fff;
-     font-size: 18px;
-     line-height: 22px;
-     text-align: center;
-     border-top: #ddd solid 1px;
-     padding-top: 25px;
-}
-
-.copyright a {
-     color: #fff;
-}
-
-.copyright a:hover {
-     color: #00ff00;
-}
-
-.header {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 10px 0;
-  }
-  
+    /* General Styling */
 .business-name {
      text-align: center;
-     margin-top: 10px;
-     
- }
-  
-
- .business-name {
-     font-family: "Dancing Script", serif;
-     font-optical-sizing: auto;
-     font-weight: bold; /* Use 'bold' directly for font-weight */
-     font-size: 4rem; /* Increase text size here, adjust the value as needed */
-     text-align: center; /* Ensure the text stays centered */
-  }
-  
-
-     .business-name h1 {
-     font-size: 30px; /* Adjust size as needed */
+     font-family: "Dancing Script", serif; /* Re-added the Dancing Script font */
      font-weight: bold;
-     margin: 0;
- }
-      
-  
- .business-name h3 {
-     font-size: 1.5rem; /* Adjust size for "Mufflers" */
-     margin: 0;
-     color: black; /* Adjust color as needed */
- }
-  
-  .d-flex.flex-column {
+     font-size: 4rem;
      display: flex;
      flex-direction: column;
-     justify-content: center;
-     align-items: flex-end;
+     align-items: center;
+     margin-top: 10px;
+     padding-left: px; /* Adjust this for centering */
   }
   
-/* Base style for the logo */
-.responsive-logo {
-     width: 100%;         /* Makes the logo take full width of its container */
-     max-width: 200px;    /* Maximum width for large screens */
-     height: auto;        /* Maintain aspect ratio */
- }
- 
- .col-12-col-md-6-col-lg-3-d-flex-flex-column-align-items-end {
-     text-align: right;
- }
-
- 
-/* Styling for the business name in the center */
-.business-name h1 {
+  .business-name h1 {
      font-size: 62px;
      font-weight: bold;
-     text-align: center;
- }
-   
-.business-name h3 {
+     margin: 0;
+  }
+  
+  .business-name h3 {
      font-size: 18px;
-     text-align: center;
- }
-   
- .header-container {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     width: 100%;
+     color: black; /* Adjust color as needed */
+     margin: 0;
   }
   
-  .business-name {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-  }
-  
-  .header-contact {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-  }
-  
-  .header-contact div {
-     margin-left: 20px; /* Adjust margin if necessary */
-  }
-  
-
-   /* Contact info styled to the far right */
-   .header-contact {
-     margin: 5px 0;
-     font-size: 14px;
- }
- 
-
- .header-container {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     width: 100%;
-  }
-  
-  .business-name {
-     flex: 1;
-     text-align: center;
-  }
-  
-  .header-contact {
-     display: flex;
-     flex-direction: column;
-     align-items: flex-end;
-  }
-  
-  .header-contact .phone, .header-contact .address {
-     margin-bottom: 5px; /* Space between phone and address */
-  }
-  
-  .about {
-     background: none; /* Remove any background image */
-     background-color: #f5f5f5; /* Optional: Set a light background color */
-  }
-  
- /* Media Query for tablets and smaller screens */
- @media (max-width: 768px) {
-     .responsive-logo {
-         max-width: 150px;  /* Resize logo for tablets */
-     }
- }
- 
- /* Media Query for mobile screens */
- @media (max-width: 480px) {
-     .responsive-logo {
-         max-width: 120px;  /* Resize logo further for smaller screens */
-     }
- }
- 
-
-
-/** end footer **/
