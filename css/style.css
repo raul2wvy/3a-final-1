@@ -44,10 +44,10 @@
   }
   
 .header-contactml-4 {
-     color: black;
+     color: rgb(4, 3, 41);
 }
 .header-contact p {
-     color: black;
+     color:  rgb(4, 3, 41);
      
  }
 
@@ -423,7 +423,7 @@ ul.btn li:last-child {
      width: 100%;
      padding: +20px 30px;
      border-bottom: #000 solid 5px;
-     background-image: linear-gradient(to bottom, blue,red);
+     background-image: linear-gradient(to bottom, blue,blue);
 }
 #addres{
      color: white;
@@ -870,7 +870,7 @@ ul.btn li:last-child {
   
 
 .footer {
-     background-image: linear-gradient(to bottom,red,blue);
+     background-image: linear-gradient(to bottom,blue,blue);
      padding-top: 10px;
      text-align: center;
      padding-bottom: 0
@@ -1120,7 +1120,7 @@ ul.social_icon li a:hover {
  
 /* Styling for the business name in the center */
 .business-name h1 {
-     font-size: 32px;
+     font-size: 62px;
      font-weight: bold;
      text-align: center;
  }
@@ -1130,12 +1130,59 @@ ul.social_icon li a:hover {
      text-align: center;
  }
    
+ .header-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+  }
+  
+  .business-name {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  
+  .header-contact {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+  
+  .header-contact div {
+     margin-left: 20px; /* Adjust margin if necessary */
+  }
+  
+
    /* Contact info styled to the far right */
    .header-contact {
      margin: 5px 0;
      font-size: 14px;
  }
  
+
+ .header-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+  }
+  
+  .business-name {
+     flex: 1;
+     text-align: center;
+  }
+  
+  .header-contact {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+  }
+  
+  .header-contact .phone, .header-contact .address {
+     margin-bottom: 5px; /* Space between phone and address */
+  }
+  
 
  /* Media Query for tablets and smaller screens */
  @media (max-width: 768px) {
