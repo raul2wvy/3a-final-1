@@ -78,7 +78,7 @@
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
-     box-sizing: border-box !important;
+     box-sizing: border-box ;;
 }
 
 html {
@@ -95,8 +95,8 @@ body {
 
 a {
      color: #1f1f1f;
-     text-decoration: none !important;
-     outline: none !important;
+     text-decoration: none ;;
+     outline: none ;;
      -webkit-transition: all .3s ease-in-out;
      -moz-transition: all .3s ease-in-out;
      -ms-transition: all .3s ease-in-out;
@@ -159,7 +159,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none;;
      opacity: 1
 }
 
@@ -185,13 +185,13 @@ p {
 a {
      color: #222222;
      text-decoration: none;
-     outline: none !important;
+     outline: none ;;
 }
 
 a,
 .btn {
-     text-decoration: none !important;
-     outline: none !important;
+     text-decoration: none ;;
+     outline: none ;;
      -webkit-transition: all .3s ease-in-out;
      -moz-transition: all .3s ease-in-out;
      -ms-transition: all .3s ease-in-out;
@@ -210,7 +210,7 @@ img {
 
 .btn-custom {
      margin-top: 20px;
-     background-color: transparent !important;
+     background-color: transparent ;;
      border: 2px solid #ddd;
      padding: 12px 40px;
      font-size: 16px;
@@ -225,12 +225,12 @@ img {
 }
 
 .form-control:focus {
-     border-color: #ffffff !important;
+     border-color: #ffffff ;;
      box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
 
 .navbar-form input {
-     border: none !important;
+     border: none ;;
 }
 
 .badge {
@@ -273,7 +273,7 @@ button {
 }
 
 .margin_top_30 {
-     margin-top: 30px !important;
+     margin-top: 30px ;;
 }
 
 .full {
@@ -350,12 +350,12 @@ ul.btn li:last-child {
      display: inline-block;
      padding: 7px 35px;
      border-radius: 10px;
-     color: #292e39 !important;
+     color: #292e39 ;;
      font-size: 17px;
 }
 
 .login_btn a:hover {
-     color: #fff !important;
+     color: #fff ;;
      background: #0808ff;
 }
 
@@ -592,7 +592,7 @@ ul.btn li:last-child {
 .read_more {
      font-size: 17px;
      background-color: #141629;
-     color: #fff !important;
+     color: #fff ;;
      padding: 13px 0px;
      width: 100%;
      max-width: 190px;
@@ -620,7 +620,8 @@ ul.btn li:last-child {
      background: #fff;
      text-align: center;
      padding: 50px 20px 20px 20px;
-     margin-top: -80px;
+     margin-top: 0px !important;  /* Removes negative margin */
+     padding-top: 20px; /* Adds space inside the boxes */
      box-shadow: #ddd 0px 0px 14px -6px;
 }
 
@@ -1229,7 +1230,7 @@ ul.social_icon li a:hover {
   
   /* Box Styling */
   .box_text {
-     background: white;
+     background: transparent ;;
      padding: 20px;
      text-align: center;
      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
@@ -1360,49 +1361,403 @@ body {
  
  /* About Section */
  .about {
-     padding: 50px 20px;
-     background-color: #eee;
+
+
+ }
+
+ /* General Fixes */
+body {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     margin: 0;
  }
  
- .about_box {
+ .main-layout {
+     flex: 1; /* Pushes content to fill space, prevents footer overlap */
+ }
+ 
+ /* Header */
+ .header-main {
+     background-color: #222;
+     padding: 15px 0;
+ }
+ 
+ .header-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 0 20px;
+ }
+ 
+ .header-contact p {
+     margin: 5px 0;
+ }
+ 
+ /* Fix Banner Overlapping */
+ .banner_main {
+     position: relative;
+     width: 100%;
      text-align: center;
-     padding: 20px;
+     padding: 120px 20px; /* Increased padding */
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 500px; /* Ensures it has a fixed height */
+     margin-bottom: 50px; /* Space to prevent overlapping with next section */
  }
  
- /* Footer */
+ .banner_main .text-bg {
+     background: rgba(255, 255, 255, 0.85);
+     padding: 20px;
+     border-radius: 10px;
+     display: inline-block;
+     max-width: 90%;
+ }
+ 
+ .banner_main h2 {
+     font-size: 2.5rem;
+     word-wrap: break-word;
+ }
+ 
+ /* Prevent Sections from Overlapping */
+ .three_box, .about {
+     padding: 50px 20px; /* Adds spacing so they don't collide with the banner */
+ }
+ 
+ /* Footer Fix */
  .footer {
+     position: relative;
+     width: 100%;
      background-color: #222;
      color: white;
-     padding: 30px 0;
+     padding: 50px 20px;
      text-align: center;
+     bottom: 0;
+     left: 0;
  }
  
  .footer h2 {
      font-size: 1.8rem;
+     margin-bottom: 15px;
  }
  
+ /* Footer Copyright */
  .copyright p {
-     font-size: 1rem;
-     margin-top: 10px;
+     font-size: 1r
+ /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Layout Fix */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-layout {
+    flex: 1; /* Ensures content expands to push footer down */
+}
+
+/* Header */
+.header-main {
+    background-color: #222;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Footer Fix */
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Footer Copyright */
+.copyright p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-contact p {
+        font-size: 1rem;
+    }
+
+    .banner_main {
+        padding: 100px 15px; /* Adjust padding on smaller screens */
+        min-height: 400px; /* Adjust height for smaller screens */
+    }
+
+    .text-bg h2 {
+        font-size: 2rem;
+    }
+
+    .box_text {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 30px 10px;
+    }
+}
+/* =================== FINAL FIX FOR OVERLAPPING ISSUES =================== */
+
+/* Ensure the main content expands to push the footer down */
+body {
+     display: flex ;;
+     flex-direction: column ;;
+     min-height: 100vh ;;
+     margin: 0 ;;
+     padding: 0 ;;
  }
  
- /* Responsive Fixes */
+ /* Fix layout for all content inside the body */
+ .main-layout {
+     flex: 1 ;; /* Expands content so the footer does not overlap */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ 
+ /* Ensure banner has enough height and spacing */
+ .banner_main {
+     position: relative ;;
+     width: 100% ;;
+     text-align: center ;;
+     padding: 180px 20px ;; /* More padding ensures no overlap */
+     background-size: cover ;;
+     background-position: center ;;
+     display: flex ;;
+     align-items: center ;;
+     justify-content: center ;;
+     min-height: 600px ;; /* Ensures it’s tall enough */
+     margin-bottom: 100px ;; /* Pushes next section down */
+ }
+ 
+ /* Fix overlapping sections by adding spacing */
+ .three_box,
+ .about {
+     padding: 120px 20px ;; /* Adds space so sections do not collide */
+ }
+ 
+ /* Ensure the footer stays at the bottom */
+ .footer {
+     position: relative ;;
+     width: 100% ;;
+     background-color:white ;;
+     color: white ;;
+     padding: 60px 20px ;;
+     text-align: center ;;
+     margin-top: auto ;; /* Forces the footer to bottom */
+     bottom: 0 ;;
+     left: 0 ;;
+ }
+ 
+ /* Ensure all sections have enough spacing to prevent overlaps */
+ section {
+     padding-bottom: 80px ;; /* Ensures space between sections */
+ }
+ 
+ /* Responsive Adjustments */
  @media (max-width: 768px) {
-     .header-container {
-         flex-direction: column;
-         text-align: center;
-     }
-     
-     .header-contact p {
-         font-size: 1rem;
+     .banner_main {
+         padding: 120px 15px ;;
+         min-height: 450px ;;
      }
  
-     .text-bg h2 {
-         font-size: 2rem;
+     .footer {
+         padding: 40px 10px ;;
      }
  
-     .box_text {
-         margin-bottom: 20px;
+     .three_box,
+     .about {
+         padding: 80px 15px ;;
+     }
+ }
+/* =================== FINAL FIX FOR OVERLAPPING ISSUES =================== */
+
+/* Ensure the main content expands to push the footer down */
+body {
+    display: flex ;;
+    flex-direction: column ;;
+    min-height: 100vh ;;
+    margin: 0 ;;
+    padding: 0 ;;
+}
+
+/* Fix layout for all content inside the body */
+.main-layout {
+    flex: 1 ;; /* Expands content so the footer does not overlap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Ensure banner has enough height and spacing */
+.banner_main {
+    position: relative ;;
+    width: 100% ;;
+    text-align: center ;;
+    padding: 180px 20px ;; /* More padding ensures no overlap */
+    background-size: cover ;;
+    background-position: center ;;
+    display: flex ;;
+    align-items: center ;;
+    justify-content: center ;;
+    min-height: 600px ;; /* Ensures it’s tall enough */
+    margin-bottom: 100px ;; /* Pushes next section down */
+}
+
+/* Fix overlapping sections by adding spacing */
+.three_box,
+.about {
+    padding: 120px 20px ;; /* Adds space so sections do not collide */
+}
+
+
+
+/* Ensure all sections have enough spacing to prevent overlaps */
+section {
+    padding-bottom: 80px ;; /* Ensures space between sections */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .banner_main {
+        padding: 120px 15px ;
+        min-height: 450px ;
+    }
+
+    .footer {
+        padding: 40px 10px ;;
+    }
+
+    .three_box,
+    .about {
+        padding: 80px 15px ;;
+    }
+}
+.banner_main {
+     position: relative;  /* Ensures normal document flow */
+     z-index: 1;  /* Keeps it above background but below other content */
+     padding: 50px 0; /* Adds spacing to prevent overlap */
+ }
+ 
+ .text-bg {
+     position: relative; /* Makes sure text remains inside banner */
+     z-index: 2;
+     background: rgba(255, 255, 255, 0.8); /* Optional: Adds a slight white overlay */
+     padding: 20px;
+     display: inline-block;
+ }
+ .three_box {
+     position: relative;
+     z-index: 2;  /* Ensures it appears above banner */
+     margin-top: 100px; /* Pushes content further down */
+ }
+
+ 
+ @media (min-width: 1024px) { 
+     .banner_main {
+         padding: 180px 20px; /* Increase padding for large screens */
+         min-height: 700px; /* Ensures the banner remains large */
+     }
+ 
+     .three_box {
+         margin-top: 120px; /* Extra spacing to prevent overlap */
      }
  }
  
+
+ .three_box {
+     position: relative;
+     z-index: 10;
+     background-color: transparent ;;
+ }
+ padding-top: XXpx;
+margin-top: XXpx;
+
+padding-top: XXpx;
+margin-top: XXpx;
+
+.three_box {
+     background: none ;;
+ }
+ 
+ .three_box {
+     padding-top: 0 ;;
+     margin-top: 0 ;;
+ }
+ 
+ .box_text {
+     position: relative;
+     z-index: 20;
+     background: none ;;
+ }
+ 
+ .three_box {
+     position: relative;
+     z-index: 10;
+     background: none ;;
+     margin-top: 50px ;; /* Pushes it below the banner */
+ }
+ 
+ .box_text {
+     position: relative;
+     z-index: 20;
+     overflow: visible ;; /* Ensures content is fully visible */
+     background: none ;;
+ }
+ .three_box {
+     position: relative !important;
+     margin-top: 50px !important; /* Adjust this value if needed */
+     padding-top: 50px !important;
+     z-index: 5 !important;
+ }
+ 
+ 
+ /* Ensure the footer stays at the bottom */
+.footer {
+     position: relative ;;
+     width: 100% ;;
+     background-color: #222 ;;
+     color: white ;;
+     padding: 60px 20px ;;
+     text-align: center ;;
+     margin-top: auto ;; /* Forces the footer to bottom */
+     bottom: 0 ;;
+     left: 0 ;;
+}
