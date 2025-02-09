@@ -1732,7 +1732,7 @@ margin-top: XXpx;
      position: relative;
      z-index: 10;
      background: none ;;
-     margin-top: 50px ;; /* Pushes it below the banner */
+     margin-top: 10px ;; /* Pushes it below the banner */
  }
  
  .box_text {
@@ -1761,3 +1761,20 @@ margin-top: XXpx;
      bottom: 0 ;;
      left: 0 ;;
 }
+
+/* Reduce the padding-top of the banner section */
+.banner_main {
+     padding-top: 50px;  /* Reduce this value to move the content up */
+     margin-top: 0;  /* You can adjust or remove this if needed */
+ }
+ 
+ /* Reduce space around the h1 and h2 text */
+ .text-bg h1, .text-bg h2 {
+     margin-top: 0;  /* Remove the top margin */
+ }
+ 
+ /* Optionally, move the image up by reducing margin-top */
+ .banner_main .row .col-md-6 img {
+     margin-top: 0;  /* Reduce or remove margin-top from the image */
+ }
+ 
